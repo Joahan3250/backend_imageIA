@@ -18,7 +18,7 @@ export class UploadController {
     uploadFile(@UploadedFile() file: Express.Multer.File) {
         return {
             filename: file.filename,
-            imageUrl: `https://tu-backend.onrender.com/uploads/${file.filename}`/*la url del backend*/
+            imageUrl: `https://backend-imageia-1.onrender.com${file.filename}`/*la url del backend*/
         };
     }
 }
